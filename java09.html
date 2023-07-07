@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+         <script>
+        var saram = prompt("가위 바위 보를 입력하세요~<1.바위 2.가위. 3.보>","0");
+        document.write("<h1>가위 바위 보 대결하기~</h1>");
+        var com = Math.floor(Math.random()*3)+1 // floor 내림
+        
+        if(com==1){
+            document.write("<img src=1.png>")
+        }
+        if(saram==1){
+            document.write("<img src=1.png>")
+            if(com==1) {
+                document.write("비겼어요!");
+            }
+            else if (com==2) {
+                document.write("<img src=win.png>");
+            }
+            else {
+                document.write("<img src=lose.png>");
+            }
+        }
+        if(com==2){
+            document.write("<img src=2.png>")
+        }
+        else if(saram==2){
+            document.write("<img src=2.png>")
+            if(com==1) {
+                document.write("<img src=win.png>");
+            }
+            else if(com==2) {
+                 document.write("비겼어요!>");
+            }
+            else{
+                document.write("<img src=lose.png>");
+            }
+        }
+        if(com==3) {
+            document.write("<img src=3.png>")
+        }
+        else if(saram==3){
+            document.write("<img src=3.png>")
+            if(com==1) {
+                document.write("<img src=win.png>");
+            }
+            else if(com==2) {
+                document.write("<img src=lose.png>");
+            }
+            else{
+                document.write("<비겼어요!>");
+            }
+          
+        }
+        
+        
+        
+    
+
+    </script>
+
+
+</body>
+</html>
