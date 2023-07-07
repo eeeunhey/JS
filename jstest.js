@@ -1,0 +1,1 @@
+document.write("Hello 안녕 ~ Java script~");
